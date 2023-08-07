@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Survey Form</title>
+    <link rel='stylesheet' href='styles.css' />
+  </head>
+  <body>
+    <h1 id='title'>Survey Form</h1>
+    <p id='description'>This is a test survey form.</p>
+    <form id='survey-form'>
+      <label for='name' id='name-label'>Name</label>
+      <input id='name' type='text' placeholder='Jane Doe' required />
+      <label for='email' id='email-label'>Email</label>
+      <input id='email' type='email' placeholder='jane.doe@email.com' required>
+      <label for='age' id='number-label'>Age (optional)</label>
+      <input id='number' type='number' min='13' max='120' placeholder='Age' />
+      <label for='dropdown'>Which option do you want to choose?</label>
+      <select id='dropdown'>
+        <option>(select one)</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+      </select>
+      <p name='question'>Choose an option:</p>
+      <label for='option-1'>
+        <input id='option-1' name='radio' value='1' type='radio'>
+        Option 1
+      </label>
+      <label for='option-2'>
+        <input id='option-2' name='radio' value='2' type='radio'>
+        Option 2
+      </label>
+      <p name='question'>Choose more options:</p>
+      <label>
+        <input type='checkbox' value='1'>
+        Option 1
+      </label>
+      <label>
+        <input type='checkbox' value='2'>
+        Option 2
+      </label>
+      <label>
+        <input type='checkbox' value='3'>
+        Option 3
+      </label>
+      <label>
+        <input type='checkbox' value='4'>
+        Option 4
+      </label>
+      <label for='comments'>Tell me more:</label>
+      <textarea id='comments'>Enter your comments here</textarea>
+      <input id='submit' type='submit' value='Submit' />
+    </form>
+  </body>
+</html>
